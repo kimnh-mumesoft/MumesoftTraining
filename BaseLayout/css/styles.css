@@ -20,6 +20,8 @@ li {
 
 .header {
   grid-area: header;
+  position: sticky;
+  top: 0;
   display: flex;
   align-items: center;
   background-color: #393f50;
@@ -59,8 +61,12 @@ li {
 
 .sidebar {
   grid-area: sidebar;
+  position: sticky;
+  top: 0;
+  height: 100vh;
   padding: 25px 0;
   width: 70px;
+  background-color: red;
 
   transition: all 0.3s ease;
 
