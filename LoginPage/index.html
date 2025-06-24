@@ -1,69 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/layout.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="login-card">
-      <div class="card-body">
-        <div class="top">
-          <div>
-            <a href="home.html">
-              <img src="./images/logo.png" alt="logo" height="28">
-            </a>
-          </div>
-          <h5 class="title">Sign In</h5>
+    <div class="header">
+      <div class="header-left">
+        <div class="menu">
+          <img src="./icons/menu.svg" alt="menu-icon">
         </div>
-        <form action="#" class="form">
-          <div class="form-group">
-            <input type="text" class="form-input" required placeholder="Enter your username">
+        <form action="#">
+          <div class="search-group">
+            <input type="text" placeholder="Search...">
+            <span> <img src="./icons/search.svg" alt="search-icon"></span>
           </div>
-          <div class="form-group">
-            <input type="password" class="form-input" required placeholder="Enter your password">
-          </div>
-          <div class="form-group">
-            <label>
-              <input type="checkbox" class="form-checkbox" id="checkbox-signin" required placeholder="Enter your username"> <span class="checkbox-label">Remember me</span> <span class="check-mark"></span>
-            </label>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="form-submit">Login</button>
-          </div>
-          <a href="#" class="form-link">
-            <span><img src="./icons/lock.svg" alt=""></span>
-            <span>Forgot your password?</span>
-          </a>
         </form>
-        <div class="bottom">
-          <h5>Sign in with</h5>
-          <div class="signin-options">
-            <button type="button" class="signin-option facebook">
-              <div class="test"><span><img src="./icons/facebook.svg" alt="facebook-icon"></span> Facebook</div class="test">
-            </button>
-            <button type="button" class="signin-option twitter">
-              <span><img src="./icons/twitter.svg" alt="twitter-icon"></span> Twitter
-            </button>
-            <button type="button" class="signin-option google">
-              <span><img src="./icons/google.svg" alt="google-icon"></span> Google+
-            </button>
+      </div>
+      <div class="header-right">
+        <div class="item">
+          <span id="theme-btn" class="icon-wrapper"><svg class="light-icon" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" x2="12" y1="1" y2="3" />
+              <line x1="12" x2="12" y1="21" y2="23" />
+              <line x1="4.22" x2="5.64" y1="4.22" y2="5.64" />
+              <line x1="18.36" x2="19.78" y1="18.36" y2="19.78" />
+              <line x1="1" x2="3" y1="12" y2="12" />
+              <line x1="21" x2="23" y1="12" y2="12" />
+              <line x1="4.22" x2="5.64" y1="19.78" y2="18.36" />
+              <line x1="18.36" x2="19.78" y1="5.64" y2="4.22" />
+            </svg>
+            <svg class="dark-icon" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+        </div>
+        <div class="lang-container item">
+          <span class="icon-wrapper lang-btn show"> <img src="./icons/flags/us.svg" alt="us-icon"></span>
+          <span class="icon-wrapper lang-btn" data-lang="hi">
+            <img src="./icons/flags/india.svg" alt="india-icon">
+          </span>
+          <span class="icon-wrapper lang-btn" data-lang="de">
+            <img src="/icons/flags/germany.svg" alt="germany-icon">
+          </span>
+          <span class="icon-wrapper lang-btn" data-lang="it">
+            <img src="./icons/flags/italia.svg" alt="italia-icon">
+          </span>
+          <span class="icon-wrapper lang-btn" data-lang="es">
+            <img src="./icons/flags/spain.svg" alt="spain-icon">
+          </span>
+          <span class="icon-wrapper lang-btn" data-lang="ru">
+            <img src="./icons/flags/russia.svg" alt="russia-icon">
+          </span>
+          <div class="lang-list">
+            <span data-lang="en">
+              <img src="./icons/flags/us.svg" alt="us-icon">
+              English
+            </span>
+            <span data-lang="hi">
+              <img src="./icons/flags/india.svg" alt="india-icon">
+              Hindi
+            </span>
+            <span data-lang="de">
+              <img src="/icons/flags/germany.svg" alt="germany-icon">
+              German
+            </span>
+            <span data-lang="it">
+              <img src="./icons/flags/italia.svg" alt="italia-icon">
+              Italian
+            </span>
+            <span data-lang="es">
+              <img src="./icons/flags/spain.svg" alt="spain-icon">
+              Spanish
+            </span>
+            <span data-lang="ru">
+              <img src="./icons/flags/russia.svg" alt="russia-icon">
+              Russian
+            </span>
           </div>
+        </div>
+
+        <div class="item bell">
+          <span class="icon-wrapper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="none" stroke="currentColor" stroke-width="32">
+              <path d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416l384 0c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8l0-18.8c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z" />
+            </svg></span>
+        </div>
+        <div class="item mail">
+          <span class="icon-wrapper">
+            <svg class="feather feather-mail" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </span>
+        </div>
+
+        <div class="item user">
+          <img src="./images/avatar.jpg" alt="avatar">
+          <span class="user-name">Alex M.</span>
+          <span>
+            <svg class="chevron-down-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor">
+              <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
+            </svg>
+          </span>
+        </div>
+        <div class="item setting">
+          <span class="icon-wrapper"><svg enable-background="new 0 0 32 32" id="Editable-line" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <circle cx="16" cy="16" fill="none" id="XMLID_224_" r="4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+              <path d="  M27.758,10.366l-1-1.732c-0.552-0.957-1.775-1.284-2.732-0.732L23.5,8.206C21.5,9.36,19,7.917,19,5.608V5c0-1.105-0.895-2-2-2h-2  c-1.105,0-2,0.895-2,2v0.608c0,2.309-2.5,3.753-4.5,2.598L7.974,7.902C7.017,7.35,5.794,7.677,5.242,8.634l-1,1.732  c-0.552,0.957-0.225,2.18,0.732,2.732L5.5,13.402c2,1.155,2,4.041,0,5.196l-0.526,0.304c-0.957,0.552-1.284,1.775-0.732,2.732  l1,1.732c0.552,0.957,1.775,1.284,2.732,0.732L8.5,23.794c2-1.155,4.5,0.289,4.5,2.598V27c0,1.105,0.895,2,2,2h2  c1.105,0,2-0.895,2-2v-0.608c0-2.309,2.5-3.753,4.5-2.598l0.526,0.304c0.957,0.552,2.18,0.225,2.732-0.732l1-1.732  c0.552-0.957,0.225-2.18-0.732-2.732L26.5,18.598c-2-1.155-2-4.041,0-5.196l0.526-0.304C27.983,12.546,28.311,11.323,27.758,10.366z  " fill="none" id="XMLID_242_" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" />
+            </svg></span>
         </div>
       </div>
     </div>
-    <div class="sign-up">
-      <p>Don't have an account?
-        <a href="#" class=" sign-up__link">
-          Sign up
-        </a>
-      </p>
+    <div class="sidebar">
+      <div class="logo"><img src="./icons//logo.png" alt="logo-big" class="logo-icon logo-big">
+        <img src="./icons/logo-sm.png" alt="logo-sm" class="logo-icon logo-sm">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" class="close">
+          <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+        </svg>
+      </div>
+      <ul class="sidebar-menu">
+        <li class="active"><a href="/" class="sidebar-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor" width="20" height="20">
+              <path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40l0-112c0-.9 0-1.9 .1-2.8l0-69.7-32 0c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+            </svg><span>Home</span></a></li>
+        <li><a href="products.html" class="sidebar-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" width="20" height="20">
+              <path d="M0 64C0 28.7 28.7 0 64 0L224 0l0 128c0 17.7 14.3 32 32 32l128 0 0 288c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm384 64l-128 0L256 0 384 128z" />
+            </svg><span>Products</span></a></li>
+      </ul>
     </div>
+    <div class="main-content">
+
+    </div>
+    <div class="overlay"></div>
   </div>
+  <script src="./js/layout.js"></script>
 </body>
 
 </html>
