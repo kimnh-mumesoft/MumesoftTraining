@@ -1,0 +1,15 @@
+# while True:
+#     try:
+#         num1 = int(input("Enter number 1: "))
+#         num2 = int(input("Enter number 2: "))
+#         result = num1 / num2
+#     except ValueError:
+#         print("Invalid input. Please enter an integer.")
+#     except ZeroDivisionError:
+#         print("Cannot divide by zero.")
+#     else:
+#         print("Result:", result)
+#         break
+
+#     finally:
+#         print("Program completed.")
