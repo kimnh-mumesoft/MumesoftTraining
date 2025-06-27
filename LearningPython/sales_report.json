@@ -1,0 +1,15 @@
+{
+    "total_overall_revenue": 6875.0,
+    "product_quantity_sold": {},
+    "product_revenue": {
+        "Laptop": 4800.0,
+        "Mouse": 575.0,
+        "Keyboard": 600.0,
+        "Monitor": 900.0
+    },
+    "daily_revenue": {
+        "2025-06-25": 3025.0,
+        "2025-06-26": 1925.0,
+        "2025-06-27": 1925.0
+    }
+}

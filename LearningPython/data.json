@@ -1,0 +1,15 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "user1",
+            "email": "user1@example.com"
+        },
+        {
+            "id": 2,
+            "username": "user2",
+            "email": "user2@example.com"
+        }
+    ],
+    "last_updated": "2025-06-27 09:33:40"
+}

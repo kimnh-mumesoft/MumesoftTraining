@@ -1,0 +1,14 @@
+{
+    "database": {
+        "host": "localhost",
+        "port": 5432,
+        "user": "admin",
+        "password": "secure_password"
+    },
+    "api_keys": {
+        "weather_api": "YOUR_WEATHER_API_KEY",
+        "map_api": "YOUR_MAP_API_KEY"
+    },
+    "debug_mode": true,
+    "version": 1.0
+}
